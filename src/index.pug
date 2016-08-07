@@ -9,13 +9,18 @@ html(lang="ja")
     meta(content='keywords', name='keywords')
     meta(content='width=device-width, initial-scale=1' name='viewport')
     meta(content='telephone=no', name='format-detection')
-    
+
     // build:css styles/main.css
     link(rel='stylesheet', href='styles/main.css', media='all')
     // endbuild
   body
-    h1 Hello Github Pages
-    
+    .textCounter
+      textarea#js-comment.textCounter__textarea(placeholder="your comment here")
+      p.textCounter__text
+        span.textCounter__leftText#js-label
+        | &nbsp;characters left
+      .textCounter__btn Submit
+
     // build:js scripts/main.js
     script(src='scripts/main.js')
     // endbuild
