@@ -1,0 +1,1 @@
+"use strict";!function(){var t=document.getElementById("js-comment"),e=document.getElementById("js-label"),n=30,s=10;e.textContent=n,t.addEventListener("keyup",function(t){var a=n-this.value.length;e.textContent=a,a<s?e.classList.add("textCounter__leftText--warning"):e.classList.remove("textCounter__leftText--warning")},!1)}();
